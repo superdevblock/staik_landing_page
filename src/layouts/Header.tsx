@@ -9,9 +9,9 @@ const Header = () => {
 		<label>staik.io</label>
       </Link>
       <div className='category lg:category_list lg:relative absolute lg:pt-0 pt-12'>
-        <Link to="/" >About Us</Link>
-        <Link to="/" >DEX</Link>		
-    		<Link to="/" >The Cooker Staking Contract</Link>		
+        <Link to="#" >About Us</Link>
+        <Link to="#" >DEX</Link>		
+    		<Link to="#" >The Cooker Staking Contract</Link>		
       </div>
       <div className='sm:float-right'>
         <a className='btn btn-normal'>
