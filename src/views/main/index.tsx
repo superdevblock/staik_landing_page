@@ -14,8 +14,8 @@ const Main = (setLoader: any) => {
 						Our project includes several key features that work together to provide unique benefits for users. These features include the STAIK token, which is used for staking and trading on our platform, the STAIK Swap DEX, which allows users to trade STAIK and other tokens, The Cooker staking platform, which provides a high-yield, longterm staking opportunity, and a tax pool and whale tax system that ensures the stability of the ecosystem.
 					</p>
 					<div className="pl-10 pt-6 flex">
-						<a className="btn btn-normal mr-6 ">BUY NOW</a>
-						<a className="btn btn-tran">STAKE NOW</a>
+						<a href="https://presale.staik.io/" className="btn btn-normal mr-6">BUY NOW</a>
+						<a href="http://staking.staik.io/" className="btn btn-tran">STAKE NOW</a>
 					</div>
 		        </div>
 				<div className=' lg:block w-full h-full lg:pt-16' >
@@ -65,7 +65,7 @@ const Main = (setLoader: any) => {
 							The DEX offers several benefits for users, including fast transaction speeds, low fees, and a simple user interface.
 						</p>
 						<div className="pl-10 pt-6 flex">
-							<button className="btn btn-normal mr-6 ">BUY NOW</button>
+							<a href="https://presale.staik.io/" className="btn btn-normal mr-6 ">BUY NOW</a>
 						</div>
 					</div>
 					<div className=' lg:block w-full h-full lg:pt-16' >
@@ -170,7 +170,7 @@ const Main = (setLoader: any) => {
 						$0.05 USD
 						</div>
 						<div className=' text-base font2 text-center py-12'>
-							<a className="btn btn-normal mr-6 ">BUY NOW</a>
+							<a href="https://presale.staik.io/" className="btn btn-normal mr-6 ">BUY NOW</a>
 						</div>	
 					</div>
 				</div>	
