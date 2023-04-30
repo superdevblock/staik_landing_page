@@ -1,4 +1,4 @@
-# BabyBoss-frontend
+# Staik landing page
 
 This repo contains frontend for the BabyBoss website
 
