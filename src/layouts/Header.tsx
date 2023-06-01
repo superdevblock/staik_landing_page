@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='header-main'>
       <Link className='logo-area flex' to="/">  
-        <img src="/images/STAIK LOGO 4.png" className='' alt="" />  
+        <img src="/images/STAIK LOGO 4.png" className='h-12 lg:h-36 -mt-1 lg:-mt-10' alt="" />
 		    <label>staik.io</label>
       </Link>
       <div className='category lg:category_list lg:relative absolute lg:pt-0 pt-12'>

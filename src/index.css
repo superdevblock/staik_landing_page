@@ -116,9 +116,14 @@ body {
 }
 
 .header-main .logo-area img {
-  width: 147px;
-  height: 123px;
-  margin-top: -40px;
+  /* width: 147px;
+  height: 123px; */
+  /* margin-top: -40px; */
+}
+
+.header-main .logo-area img-sm {
+  width: 49px;
+  height: 41px;
 }
 
 .header-main .logo-area label{
