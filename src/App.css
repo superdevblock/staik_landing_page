@@ -51,3 +51,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.landing-title {
+  font-style: SemiBold;
+  font-size: 48px;
+}

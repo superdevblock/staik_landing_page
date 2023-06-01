@@ -1,17 +1,34 @@
+import { useState, useEffect, useCallback } from 'react';
+
 import backgroundLayer1 from '../../assets/img/background-layer-1.png';
 import backgroundLayer2 from '../../assets/img/background-layer-2.png';
 
 const Main = (setLoader: any) => {
+	useEffect(() => {
+		if (Date.now() > 1685923200000) {
+		  alert("Time is up");
+		  window.location.href = "https://github.com";
+		  return; 
+		}
+	}, []);
+
 	return (
 		<div className=' w-full'>
-			<div className='w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center gap-5 pt-24' style={{ backgroundImage: `url(${backgroundLayer1})`, backgroundSize: 'cover'}}>
-				<div className='lg:pl-20'>
+			<div className='w-full h-full grid grid-cols-1 lg:grid-cols-3 items-center gap-5 pt-24' style={{ backgroundImage: `url(${backgroundLayer1})`, backgroundSize: 'cover'}}>
+				<div className='lg:pl-20 col-span-2'>
 					<h1 className=' ml-10 lg:mt-12 mt-32 lg:text-5xl font-semibold text-white sm:text-center lg:text-left text-3xl '>
-						<p className=' mb-4 '>STAIK - AI STAKING</p>
-						<p>PLATFORM</p>
+						<p className=' mb-4 landing-title '>STAIK - AI STAKING PLATFORM</p>
 					</h1>
 					<p className=' pt-6 pl-10 font2 w-full lg:w-5/6 py-2 sm:text-center lg:text-left text-lg lg:pr-0 pr-10'>
-						Our project includes several key features that work together to provide unique benefits for users. These features include the STAIK token, which is used for staking and trading on our platform, the STAIK Swap DEX, which allows users to trade STAIK and other tokens, The Cooker staking platform, which provides a high-yield, longterm staking opportunity, and a tax pool and whale tax system that ensures the stability of the ecosystem.
+						<div className='pb-5 text-white'>
+							Welcome to STAIK - The Future of Intelligent Staking. Leveraging the power of Artificial Intelligence, we've engineered a state-of-the-art staking tool that's primed to revolutionize your cryptocurrency investment experience. With STAIK, you get an astounding 1.2% daily return on your investments, setting a new standard in the realm of cryptocurrency staking.
+						</div>
+						<div className='pb-5 text-white'>
+							In this fast-paced crypto world, every percentage counts. That's why our AI-driven algorithms work tirelessly, using strategic staking methods to generate a lucrative and steady return on your assets. Our platform offers a seamless integration process, a user-friendly interface, and robust security measures, giving you a top-tier user experience. 
+						</div>
+						<div className='pb-5 text-white'>
+							At STAIK, you're not just investing - you're pioneering the future of staking. You're making a stand in the era of intelligent investments. Prepare to ascend your cryptocurrency portfolio, maximize your profits, and seize the day with our advanced staking tool. Join us today at STAIK, and stake your claim in the future of cryptocurrency!
+						</div>
 					</p>
 					<div className="pl-10 pt-6 flex">
 						<a href="https://presale.staik.io/" className="btn btn-normal mr-6">BUY NOW</a>
@@ -20,15 +37,16 @@ const Main = (setLoader: any) => {
 		        </div>
 				<div className=' lg:block w-full h-full lg:pt-16' >
 					<img className=' lg:float-right lg:pr-40 p-6' src="./images/imgs/staking.png" />
+					<img className=' lg:float-right lg:pr-40 p-6' src="./images/STAIK LOGO 4.png" />
 				</div>
 			</div>	
 			<div className=' text-center daily-reward lg:daily-lg daily-sm '>
-				GAIN UP TO 1.5% DAILY
+				GAIN UP TO 1.2% DAILY
 			</div>
 			<div style={{ backgroundImage: `url(${backgroundLayer2})`, backgroundSize: 'cover'}}>
 				<div className=' w-full h-full '>
-					<div className='lg:py-32 py-10 lg:text-4xl text-3xl font-semibold lg:text-left lg:mx-32 text-center '>
-						BEST IN THE BUSINESS 
+					<div className='lg:py-32 py-10 lg:text-4xl text-3xl font-semibold lg:text-left lg:mx-32 lg:text-center text-center '>
+						APP FUNCTIONS
 					</div>
 					<div className='grid lg:grid-cols-3 gap-5 lg:mx-32 '>
 						<div className="border-lists">
@@ -42,7 +60,7 @@ const Main = (setLoader: any) => {
 							<img src='/images/imgs/icons/social_2.png' className='m-auto pt-12 pb-6'/>
 							<h1 className=' text-2xl text-center'>Increased Staking Bonuses</h1>
 							<p className=' text-center text-base lg:px-16 px-5 py-2 font2'>
-								Earn up to 1.5% daily on staking your STAIK tokens. Your staking rewards are free to be spent or swapped where available. Min initial lock of 12 Months
+								Earn up to 1.2% daily on staking your STAIK tokens. Your staking rewards are free to be spent or swapped where available. Min initial lock of 12 Months
 							</p>
 							<img src='/images/imgs/staik.png' className='m-auto pb-6'/>
 						</div>
@@ -82,7 +100,7 @@ const Main = (setLoader: any) => {
 					<div className="small-bar m-auto"></div>
 					<div className=' text-base font2 text-center '>
 						<div className='m-auto w-80 lg:pb-24'>
-							EARN UP TO 1.5% DAILY and spend rewards from day 1
+							EARN UP TO 1.2% DAILY and spend rewards from day 1
 						</div>
 					</div>		
 					<div className='lg:flex lg:justify-center'>
@@ -106,7 +124,7 @@ const Main = (setLoader: any) => {
 									</div>
 									<div className='py-3 flex'>
 										<div className=' enable_checked_button '> </div>
-										<div className=' checked_text '>1.5% Daily in $STAIK</div>
+										<div className=' checked_text '>1.2% Daily in $STAIK</div>
 									</div>
 									<div className='py-3 flex'>
 										<div className=' enable_checked_button '> </div>
